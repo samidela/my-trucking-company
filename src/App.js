@@ -16,6 +16,8 @@ import { Ifta } from "./Components/Services/Ifta";
 import { UcrRegistration } from "./Components/Services/UcrRegistration";
 import { JobApplication } from "./Components/FutureDrivers/JobApplication";
 import { EligibilityCheck } from "./Components/FutureDrivers/EligibilityCheck";
+import { BOL } from "./Components/CurrenDrivers/BOL";
+import { Login } from "./Components/CurrenDrivers/Login";
 
 class App extends Component {
   render() {
@@ -29,7 +31,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
-              <Route path="/Services/Biennial" component={Biennial} />
+              <Route path="/Servics/Biennial" component={Biennial} />
               <Route path="/Services/CabCard" component={CabCard} />
               <Route path="/Services/CarrierPacket" component={CarrierPacket} />
               <Route path="/Services/Dispatch" component={Dispatch} />
@@ -43,11 +45,13 @@ class App extends Component {
                 path="/FutureDrivers/EligibilityCheck"
                 component={EligibilityCheck}
               />
-
               <Route
                 path="/Services/UcrRegistration"
                 component={UcrRegistration}
               />
+              <Route path="/CurrentDrivers/BOL" component={BOL} />
+              <Route path="/FAQ" component={FAQ} />
+              <Route path="/CurrentDrivers/Login" component={Login} />
               <Route component={NoMatch} />
             </Switch>
           </Layout>
