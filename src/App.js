@@ -14,6 +14,8 @@ import { CarrierPacket } from "./Components/Services/CarrierPacket";
 import { form2290 } from "./Components/Services/form2290";
 import { Ifta } from "./Components/Services/Ifta";
 import { UcrRegistration } from "./Components/Services/UcrRegistration";
+import { JobApplication } from "./Components/FutureDrivers/JobApplication";
+import { EligibilityCheck } from "./Components/FutureDrivers/EligibilityCheck";
 
 class App extends Component {
   render() {
@@ -33,6 +35,15 @@ class App extends Component {
               <Route path="/Services/Dispatch" component={Dispatch} />
               <Route path="/Services/form2290" component={form2290} />
               <Route path="/Services/Ifta" component={Ifta} />
+              <Route
+                path="/FutureDrivers/JobApplication"
+                component={JobApplication}
+              />
+              <Route
+                path="/FutureDrivers/EligibilityCheck"
+                component={EligibilityCheck}
+              />
+
               <Route
                 path="/Services/UcrRegistration"
                 component={UcrRegistration}
