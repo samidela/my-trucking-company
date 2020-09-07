@@ -4,19 +4,22 @@ import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import styled from "styled-components";
 
 const Styles = styled.div`
-  .navbar {
-    background-color: #832;
-    font-color: black;
-    width: 100%;
-  }
-  .navbar-brand,
-  .navbar-nav .nav-link {
+  .navbar-link {
     color: #bbb;
-
-    &:hover {
-      color: white;
-    }
   }
+    .navbar {
+      background-color: #832;
+      font-color: black;
+      width: 100%;
+    }
+    .navbar-brand,
+    .navbar-nav .nav-link {
+      color: #bbb;
+
+      &:hover {
+        color: white;
+      }
+    }
   }
 `;
 
@@ -55,7 +58,7 @@ export const NavigationBar = () => (
             <NavDropdown.Item href="/CurrentDrivers/Login">
               Login
             </NavDropdown.Item>
-            <NavDropdown.Item href="/CurrentDriver/BOL">
+            <NavDropdown.Item href="/CurrentDrivers/BOL">
               BOL Uploader
             </NavDropdown.Item>
           </NavDropdown>
@@ -63,9 +66,9 @@ export const NavigationBar = () => (
             <NavDropdown.Item href="/FutureDrivers/JobApplication">
               Application
             </NavDropdown.Item>
-            <NavDropdown.Item href="/EligibilityCheck">
-              ELigibility Check
-            </NavDropdown.Item>
+            <Nav.Link>
+              <Link to="./EligibilityCheck">EligibilityCheck</Link>
+            </Nav.Link>
           </NavDropdown>
           <Nav.Item>
             <Nav.Link>
