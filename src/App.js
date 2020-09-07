@@ -50,7 +50,6 @@ class App extends Component {
                 component={UcrRegistration}
               />
               <Route path="/CurrentDrivers/BOL" component={BOL} />
-              <Route path="/FAQ" component={FAQ} />
               <Route path="/CurrentDrivers/Login" component={Login} />
               <Route component={NoMatch} />
             </Switch>
